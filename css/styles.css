@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap');
+
+*{
+    font-family: 'Roboto Slab', serif;
+    color: aliceblue;
+}
+
+body{
+    background-color: grey;
+    color: black;
+    height: 100%;
+    margin: 0px;
+}
+
+header{
+    background-color: black;
+    color: black;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+}
+
+a{
+    color: white;
+}
+
+button{
+    background-color: red;
+    color: white;
+}
+
+.NavButton{
+    background-color: transparent;
+    margin: 1px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: inset 0px 0px 0px transparent;
+    transition: box-shadow 0.1s ease-in;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.NavButton:hover{
+    box-shadow: inset 0px 0px 20px 30px #ffffff2b
+}
+
+#mapGoogle{
+    display: flex;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.wppicon{
+    right: 5px;
+    top: 5px;
+    height: 60px;
+    position: absolute;
+}
+
+.footerGridWapper{
+    display: grid;
+    grid-auto-columns: 4fr;
+    grid-auto-rows: auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
