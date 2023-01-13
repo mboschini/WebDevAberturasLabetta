@@ -50,7 +50,7 @@ button{
     color: white;
 }
 .NavButtonHolder{
-    background-image: url('Images/labettaaberturaslogo.png');
+    background-image: url("/Images/labettaaberturaslogo.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 300px;
