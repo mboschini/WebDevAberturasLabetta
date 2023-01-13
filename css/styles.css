@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: grey;
+    background-color: #404040;
     color: black;
     height: 100%;
     margin: 0px;
@@ -15,7 +15,7 @@ body{
 
 
 header{
-    background-color: black;
+    background-color: #191919;
     color: black;
     position: relative;
     top: 0;
@@ -36,7 +36,12 @@ button{
     background-color: red;
     color: white;
 }
-
+.NavButtonHolder{
+    background-image: url('/Images/labettaaberturaslogo.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 300px;
+}
 .NavButton{
     background-color: transparent;
     margin: 1px;
@@ -48,11 +53,27 @@ button{
     box-shadow: inset 0px 0px 0px transparent;
     transition: box-shadow 0.1s ease-in;
     border-radius: 10px;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 10px 10px 10px;
     padding: 10px;
+    z-index: 3;
 }
 .NavButton:hover{
     box-shadow: inset 0px 0px 20px 30px #ffffff2b
+}
+
+.banner{
+    background-color: #ff2821;
+    width: 100%;
+    height: 5px;
+}
+
+.bannerblur{
+    backdrop-filter: blur(6px);
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+    background-color: #40404066;
 }
 
 #mapGoogle{
@@ -66,7 +87,36 @@ button{
     top: 5px;
     height: 60px;
     position: absolute;
+    z-index: 3;
 }
+    
+.wppicon:hover{
+    animation: scale-animation 0.5s ease-in-out 0s; /* Ejecuta la animación "scale-animation" 2 veces, con una duración de 2 segundos, una transición suave y un delay de 0 segundos */
+}
+
+@keyframes scale-animation {
+
+    /* Define las claves de la animación */
+    0% {
+        transform: scale(1);
+        /* Tamaño inicial del icono */
+    }
+
+    25% {
+        transform: scale(0.9);
+        /* Aumenta el tamaño del icono al 120% */
+        /* Agrega un retraso de 0.5 segundos antes de que comience la transición */
+    }
+
+    50% {
+        transform: scale(1.2);
+        /* Vuelve al tamaño original */
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+  
 
 .footerGridWapper{
     display: grid;
@@ -77,3 +127,39 @@ button{
     padding-bottom: 30px;
 }
 
+.gallerytitle{
+    font-size: xx-large;
+    padding-left: 40px;
+    position: absolute;
+    z-index: 5;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 640px;
+    justify-items: center;
+    position: relative; /* Establece la posición relativa para el contenedor */
+}
+
+.gallery img {
+    width: 100%; /* Ajusta el ancho de la imagen al ancho del contenedor */
+    height: auto;
+    transition: transform 0.5s; /* Agrega una transición de 0.5 segundos al cambio de transform */
+    display: block;
+    object-fit: cover;
+  }
+  
+.gallery img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al 150% cuando el cursor está sobre la imagen */
+}
+  
+.gallery_img_container{
+    overflow: hidden;
+    width: 100%;
+}
+
+.gallery_img_container img{
+    width: 800px; /* Ancho del contenedor */
+    height: auto; /* Alto del contenedor */
+}
