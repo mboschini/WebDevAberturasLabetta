@@ -259,6 +259,9 @@ footer{
     #contactanos{
         grid-template-columns: repeat(2,1fr);
     }
+    .contactText{
+        grid-column: 1/2;
+    }
     #mapGoogle{
         display: flex;
         grid-column: 2/3;
