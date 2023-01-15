@@ -63,7 +63,7 @@ a{
     height: 72px;
 }
 .wppicon{
-    right: 50px;
+    right: 10px;
     top: 5px;
     height: 60px;
     z-index: 3;
@@ -94,7 +94,7 @@ a{
     }
 }
 .gallerytitle{
-    font-size: xx-large;
+    font-size: x-large;
     padding-left: 40px;
     position: absolute;
     z-index: 5;
@@ -106,7 +106,6 @@ a{
 .aboutText{
     padding: 90px;
     text-align: center;
-    font-size: x-large;
 }
 .menu {
     display: none;
@@ -148,7 +147,6 @@ a{
 }
 .contactText{
     padding: 100px 50px;
-    font-size: x-large;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,6 +174,24 @@ footer{
     width: 100%;
     height: auto;
     
+}
+
+@media (max-width: 767px) {    
+    .footer-left img {
+        width: -webkit-fill-available;
+    }
+    .NavButtonHolder{
+        background-color: white;
+    }
+}
+
+@media (min-width: 768px) {
+    .contactText, .aboutText{
+        font-size: x-large;
+    }
+    .gallerytitle{
+        font-size: xx-large;
+    }
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
@@ -246,14 +262,6 @@ footer{
     #mapGoogle{
         display: flex;
         grid-column: 2/3;
-    }
-    .contactText{
-        grid-column: 1/2;
-        padding: 100px 50px;
-        font-size: x-large;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
     footer{
         background-color: black;
